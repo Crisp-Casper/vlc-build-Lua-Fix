@@ -34,7 +34,7 @@ function round(what, precision)
         what = common.us_tonumber(what)
     end
     if type(what) == "number" then
-        return math.floor(what*math.pow(10,precision)+0.5) / math.pow(10,precision)
+        return math.floor(what * (10 ^ precision) + 0.5) / (10 ^ precision)
     end
     return nil
 end
